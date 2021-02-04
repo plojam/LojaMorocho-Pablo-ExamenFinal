@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
+    version="2.3">
+	
+	<navigation-rule>
+		<from-view-id>/CrearCliente.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>inicio</from-outcome>
+			<to-view-id>/Inicio.xhtml</to-view-id>
+		</navigation-case>
+		
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/CrearRestaurante.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>inicio</from-outcome>
+			<to-view-id>/Inicio.xhtml</to-view-id>
+		</navigation-case>
+		
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/Reservar.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>inicio</from-outcome>
+			<to-view-id>/Inicio.xhtml</to-view-id>
+		</navigation-case>
+		
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/Inicio.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>cliente</from-outcome>
+			<to-view-id>/CrearCliente.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>restaurante</from-outcome>
+			<to-view-id>/CrearRestaurante.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>reserva</from-outcome>
+			<to-view-id>/Reservar.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>resRestaurante</from-outcome>
+			<to-view-id>/ReservasRestaurante.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>resCliente</from-outcome>
+			<to-view-id>/ListarReservas.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	<navigation-rule>
+		<from-view-id>/ListarReservas.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>inicio</from-outcome>
+			<to-view-id>/Inicio.xhtml</to-view-id>
+		</navigation-case>
+		
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/ReservasRestaurante.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>inicio</from-outcome>
+			<to-view-id>/Inicio.xhtml</to-view-id>
+		</navigation-case>
+		
+	</navigation-rule>
+	
+</faces-config>

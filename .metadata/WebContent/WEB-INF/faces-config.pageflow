@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16124571981430" configfile="/LojaMorocho-Pablo-ExamenFinal/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="CrearCliente.xhtml" x="554" y="178" id="pf16124613607610" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf16124613607611" inlinks="pf16124664960107" path="/CrearCliente.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Inicio.xhtml" x="338" y="677" id="pf16124613607612" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" outlinks="pf16124664960107 pf16124664960108 pf16124664960109 pf161246671214416 pf161246671214417" inlinks="pf16124613607611 pf16124646717355 pf161246649601010 pf161246656560912 pf161246656560913" path="/Inicio.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="CrearRestaurante.xhtml" x="122" y="178" id="pf16124620277144" referenceLink="//@navigationRule.1/@fromViewId|" path="/CrearCliente.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="CrearRestaurante.xhtml" x="554" y="562" id="pf16124646717356" referenceLink="//@navigationRule.3/@navigationCase.1/@toViewId|" outlinks="pf16124646717355" inlinks="pf16124664960108" path="/CrearRestaurante.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Reservar.xhtml" x="554" y="946" id="pf161246649601011" referenceLink="//@navigationRule.3/@navigationCase.4/@toViewId|" outlinks="pf161246649601010" inlinks="pf16124664960109 pf161246671214416 pf161246671214417" path="/Reservar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="ListarReservas.xhtml" x="122" y="562" id="pf161246656561014" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf161246656560912" path="/ListarReservas.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="ReservasRestaurante.xhtml" x="122" y="946" id="pf161246656561015" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf161246656560913" path="/ReservasRestaurante.xhtml"/>
+  <links id="pf16124613607611" target="pf16124613607612" source="pf16124613607610" outcome="inicio"/>
+  <links id="pf16124646717355" target="pf16124613607612" source="pf16124646717356" outcome="inicio"/>
+  <links id="pf161246649601010" target="pf16124613607612" source="pf161246649601011" outcome="inicio"/>
+  <links id="pf16124664960107" target="pf16124613607610" source="pf16124613607612" outcome="cliente"/>
+  <links id="pf16124664960108" target="pf16124646717356" source="pf16124613607612" outcome="restaurante"/>
+  <links id="pf16124664960109" target="pf161246649601011" source="pf16124613607612" outcome="reserva"/>
+  <links id="pf161246656560912" target="pf16124613607612" source="pf161246656561014" outcome="inicio"/>
+  <links id="pf161246656560913" target="pf16124613607612" source="pf161246656561015" outcome="inicio"/>
+  <links id="pf161246671214416" target="pf161246649601011" source="pf16124613607612" outcome="resRestaurante"/>
+  <links id="pf161246671214417" target="pf161246649601011" source="pf16124613607612" outcome="resCliente"/>
+</pageflow:Pageflow>
